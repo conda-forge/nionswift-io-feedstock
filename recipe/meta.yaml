@@ -10,17 +10,19 @@ source:
   sha256: e3576105d38b01ee70312dfa606b4ed77698b501a782e546d83a0a4e2ea6e824
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
+    - nionutils >=0.3.10
     - niondata >=0.13.1
-    - python >=3.6
+    - numpy
+    - python >=3.7
 
 test:
   imports:
