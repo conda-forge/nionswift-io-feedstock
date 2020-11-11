@@ -1,18 +1,18 @@
 {% set name = "nionswift-io" %}
-{% set version = "0.14.0" %}
+{% set version = "0.14.2" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: e3576105d38b01ee70312dfa606b4ed77698b501a782e546d83a0a4e2ea6e824
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 49da8bff9200a0a5da183cfc594218a9588b1041b262fb8842dac33e45124b35
 
 build:
-  number: 2
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -34,11 +34,11 @@ test:
     - h5py
 
 about:
-  home: "https://github.com/nion-software/nionswift-io"
+  home: https://github.com/nion-software/nionswift-io
   license: Apache 2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: "IO handlers for NionSwift."
+  summary: IO handlers for NionSwift.
   dev_url: https://github.com/nion-software/nionswift-io
 
 extra:
