@@ -5,11 +5,11 @@ Home: https://github.com/nion-software/nionswift-io
 
 Package license: Apache 2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nionswift-io-feedstock/blob/master/LICENSE.txt)
 
 Summary: IO handlers for NionSwift.
 
-
+Development: https://github.com/nion-software/nionswift-io
 
 Current build status
 ====================
@@ -17,8 +17,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/conda-forge-nionswift-io-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8852&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nionswift-io-feedstock?branchName=master">
       </a>
     </td>
   </tr>
