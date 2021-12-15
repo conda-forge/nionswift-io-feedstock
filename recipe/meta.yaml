@@ -1,5 +1,5 @@
 {% set name = "nionswift-io" %}
-{% set version = "0.14.3" %}
+{% set version = "0.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 36fff25f3418d710155b9c3d4e6b2360cde1f9d71c51298bd162f7f38313e844
+  sha256: a147168befc59d6013946875807f7ef8ed968ada94fd772bfb072764892a50da
 
 build:
   number: 0
@@ -17,12 +17,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
-    - nionutils >=0.3.10
-    - niondata >=0.13.1
-    - numpy
-    - python >=3.7
+    - niondata >=0.14.0,<0.15.0
+    - nionutils >=0.4.0,<0.5.0
+    - numpy >=1.21,<2.0
+    - python >=3.8
 
 test:
   imports:
