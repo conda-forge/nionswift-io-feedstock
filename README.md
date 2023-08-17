@@ -1,11 +1,11 @@
-About nionswift-io
-==================
+About nionswift-io-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nionswift-io-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/nion-software/nionswift-io
 
 Package license: Apache 2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nionswift-io-feedstock/blob/main/LICENSE.txt)
 
 Summary: IO handlers for NionSwift.
 
