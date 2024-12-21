@@ -1,3 +1,4 @@
+{% set python_min = '3.11' %}
 {% set name = "nionswift-io" %}
 {% set version = "15.3.0" %}
 
@@ -6,24 +7,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 5a927fd1096a60eee1113c607f7cdab59d364aa4528ea6ab2fb21f17af7f65c4
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.11
+    - python {{ python_min }}
     - setuptools
   run:
     - niondata >=15.7,<16.0
     - nionutils >=4.12,<5.0
     - numpy >=2.0,<3.0
-    - python >=3.11
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -33,6 +34,7 @@ test:
     - nionswift_plugin.TIFF_IO.test
   requires:
     - h5py
+    - python {{ python_min }}
 
 about:
   home: https://github.com/nion-software/nionswift-io
